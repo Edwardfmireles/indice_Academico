@@ -30,9 +30,9 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.iniciar = new System.Windows.Forms.Button();
+            this.matricula = new System.Windows.Forms.TextBox();
+            this.contra = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -55,41 +55,41 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Contraseña";
             // 
-            // button1
+            // iniciar
             // 
-            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(130, 248);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(86, 26);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Iniciar";
-            this.button1.UseVisualStyleBackColor = true;
+            this.iniciar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iniciar.Location = new System.Drawing.Point(130, 248);
+            this.iniciar.Name = "iniciar";
+            this.iniciar.Size = new System.Drawing.Size(86, 26);
+            this.iniciar.TabIndex = 2;
+            this.iniciar.Text = "Iniciar";
+            this.iniciar.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // matricula
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(81, 85);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(184, 31);
-            this.textBox1.TabIndex = 4;
+            this.matricula.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.matricula.Location = new System.Drawing.Point(81, 85);
+            this.matricula.Name = "matricula";
+            this.matricula.Size = new System.Drawing.Size(184, 31);
+            this.matricula.TabIndex = 4;
             // 
-            // textBox2
+            // contra
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(81, 193);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(184, 31);
-            this.textBox2.TabIndex = 5;
-            this.textBox2.UseSystemPasswordChar = true;
+            this.contra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.contra.Location = new System.Drawing.Point(81, 193);
+            this.contra.Name = "contra";
+            this.contra.Size = new System.Drawing.Size(184, 31);
+            this.contra.TabIndex = 5;
+            this.contra.UseSystemPasswordChar = true;
             // 
             // loginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(347, 302);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.contra);
+            this.Controls.Add(this.matricula);
+            this.Controls.Add(this.iniciar);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.MaximizeBox = false;
@@ -105,9 +105,9 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Button iniciar;
+        private System.Windows.Forms.TextBox matricula;
+        private System.Windows.Forms.TextBox contra;
     }
 }
 
