@@ -15,6 +15,27 @@ namespace indice_Academico
         public loginForm()
         {
             InitializeComponent();
+            
         }
+
+       public void iniciar_Click(object sender, EventArgs e)
+       { 
+        
+
+
+        
+
+            cargaDatos datos = new cargaDatos();
+
+            datos.insertar(matricula.Text, contra.Text);
+
+            datos.Show();
+
+       }
+
+
+        
+
     }
+
 }

@@ -12,23 +12,17 @@ namespace indice_Academico
 {
     public partial class cargaDatos : Form
     {
+
+        private string matricula;
+        private string contra;
+
+
         public cargaDatos()
         {
             InitializeComponent();
 
-
-
-
-
-
-            Timer t = new Timer();
-            t.Enabled = false;
-
-            WebBrowser web = new WebBrowser();
-            web.Navigate("http://acadmedia.edu.do/");
+            WebBrowser web = webBrowser1;
             web.DocumentCompleted += new WebBrowserDocumentCompletedEventHandler(datos);
-
-
 
 
         }
@@ -38,7 +32,29 @@ namespace indice_Academico
         {
 
             WebBrowser web = (WebBrowser)o;
+            web = webBrowser1;
+            web.Navigate("http://acadmedia.itsc.edu.do/");
+            HtmlDocument html = web.Document;
+            HtmlElement matricula = html.GetElementById("LoginBox_UserName");
+            HtmlElement contra = html.GetElementById("LoginBox_Password");
+            matricula.SetAttribute("value", this.matricula);
+            contra.SetAttribute("value", this.contra);
+            html.GetElementById("LoginBox_LoginButton").InvokeMember("click");
+
+
+            Timer t = new Timer();
+            t.Enabled = false;
 
         }
+
+
+        public void insertar(string matricula, string contra)
+        {
+            this.matricula = matricula;
+            this.contra = contra;
+        }
+
+
+
     }
 }
